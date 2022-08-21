@@ -54,50 +54,53 @@
             android:layout_width="163dp"
             android:layout_height="115dp"
             android:layout_marginTop="20dp"
+            android:background="@color/verde"
+            android:backgroundTint="@color/verde"
             android:text="@string/rock"
+            android:gravity="top"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@id/lineaguia"
             app:layout_constraintTop_toBottomOf="@id/text_view_topgender"
-            android:background="@color/verde"
-            android:textColor="@color/white"
-            />
+            app:strokeColor="@color/verde" />
 
         <Button
             android:id="@+id/genero2"
             android:layout_width="163dp"
             android:layout_height="115dp"
-            android:text="@string/electronica"
-            app:layout_constraintTop_toBottomOf="@id/text_view_topgender"
-            app:layout_constraintStart_toEndOf="@id/genero1"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="20dp"
             android:background="@color/rojo"
+            android:text="@string/electronica"
+            android:gravity="top"
             android:textColor="@color/white"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/genero1"
+            app:layout_constraintTop_toBottomOf="@id/text_view_topgender" />
 
         <Button
             android:id="@+id/genero3"
             android:layout_width="163dp"
             android:layout_height="115dp"
-            android:text="@string/pop"
-            app:layout_constraintTop_toBottomOf="@id/genero1"
-            app:layout_constraintStart_toStartOf="@id/lineaguia"
-            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal"
             android:background="@color/gris"
+            android:text="@string/pop"
+            android:gravity="top"
             android:textColor="@color/white"
-            />
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintTop_toBottomOf="@id/genero1" />
 
         <Button
             android:id="@+id/genero4"
             android:layout_width="163dp"
             android:layout_height="115dp"
-            android:text="@string/alternativa"
-            app:layout_constraintTop_toBottomOf="@id/genero2"
-            app:layout_constraintStart_toEndOf="@id/genero3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal"
             android:background="@color/morado"
+            android:text="@string/alternativa"
+            android:gravity="top"
             android:textColor="@color/white"
-            />
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/genero3"
+            app:layout_constraintTop_toBottomOf="@id/genero2" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/lineaguia_horizontal"
