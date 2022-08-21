@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Laboratorio 6</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="your_library">Your Library</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_search">Search</string>
+    <string name="your_top_genres">Your top genres</string>
+    <string name="rock">Rock</string>
+    <string name="electronica">Electrónica</string>
+    <string name="pop">Pop</string>
+    <string name="alternativa">Alternativa</string>
+    <string name="most_recent">Most recent</string>
+    <string name="liked_songs">Liked songs</string>
+</resources>

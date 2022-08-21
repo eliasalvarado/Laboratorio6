@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_search">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+
+        <TextView
+            android:id="@+id/text_view_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_search"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+
+            />
+
+        <TextView
+            android:id="@+id/text_view_topgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_top_genres"
+            app:layout_constraintTop_toBottomOf="@id/text_view_search"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="13dp" />
+
+        <Button
+            android:id="@+id/genero1"
+            android:layout_width="163dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/rock"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintTop_toBottomOf="@id/text_view_topgender"
+            android:background="@color/verde"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/genero2"
+            android:layout_width="163dp"
+            android:layout_height="115dp"
+            android:text="@string/electronica"
+            app:layout_constraintTop_toBottomOf="@id/text_view_topgender"
+            app:layout_constraintStart_toEndOf="@id/genero1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/rojo"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/genero3"
+            android:layout_width="163dp"
+            android:layout_height="115dp"
+            android:text="@string/pop"
+            app:layout_constraintTop_toBottomOf="@id/genero1"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal"
+            android:background="@color/gris"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/genero4"
+            android:layout_width="163dp"
+            android:layout_height="115dp"
+            android:text="@string/alternativa"
+            app:layout_constraintTop_toBottomOf="@id/genero2"
+            app:layout_constraintStart_toEndOf="@id/genero3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal"
+            android:background="@color/morado"
+            android:textColor="@color/white"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="434dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_library"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ic_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_perfil"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal1"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintBottom_toTopOf="@id/lineaguia_horizontal2"
+            />
+
+        <TextView
+            android:id="@+id/text_view_your_library"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/ic_perfil"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal1"
+            app:layout_constraintBottom_toTopOf="@id/lineaguia_horizontal2"
+            android:layout_marginStart="10dp"
+            android:text="@string/your_library"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/ic_search_library"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal1"
+            app:layout_constraintEnd_toStartOf="@id/button_incremento"
+            app:layout_constraintBottom_toTopOf="@id/lineaguia_horizontal2"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            />
+
+        <ImageButton
+            android:id="@+id/button_incremento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_incremento"
+            app:layout_constraintBottom_toTopOf="@id/lineaguia_horizontal2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal1"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:background="@color/black"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="13dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia_horizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="15dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia_horizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="50dp" />
+
+        <ImageView
+            android:id="@+id/ic_datos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_doble_flecha"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal2"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintBottom_toTopOf="@id/lineaguia_horizontal3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/ic_datos"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal2"
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal3"
+            android:text="@string/most_recent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia_horizontal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="89dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineaguia_horizontal4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="165dp" />
+
+        <ImageButton
+            android:id="@+id/botonfav"
+            android:layout_width="62dp"
+            android:layout_height="54dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_favorito"
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal4"
+            app:layout_constraintStart_toStartOf="@id/lineaguia"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/text_view_liked_songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/botonfav"
+            app:layout_constraintTop_toTopOf="@id/lineaguia_horizontal3"
+            app:layout_constraintBottom_toTopOf="@id/text_view_cantidad"
+            android:text="@string/liked_songs"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/text_view_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/botonfav"
+            app:layout_constraintTop_toBottomOf="@id/text_view_liked_songs"
+            app:layout_constraintBottom_toBottomOf="@id/lineaguia_horizontal4"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/gris"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
