@@ -54,7 +54,6 @@
             android:layout_width="163dp"
             android:layout_height="115dp"
             android:layout_marginTop="20dp"
-            android:background="@color/verde"
             android:backgroundTint="@color/verde"
             android:text="@string/rock"
             android:gravity="top"
@@ -62,14 +61,14 @@
             android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@id/lineaguia"
             app:layout_constraintTop_toBottomOf="@id/text_view_topgender"
-            app:strokeColor="@color/verde" />
+            />
 
         <Button
             android:id="@+id/genero2"
             android:layout_width="163dp"
             android:layout_height="115dp"
             android:layout_marginTop="20dp"
-            android:background="@color/rojo"
+            android:backgroundTint="@color/rojo"
             android:text="@string/electronica"
             android:gravity="top"
             android:textColor="@color/white"
@@ -81,7 +80,7 @@
             android:id="@+id/genero3"
             android:layout_width="163dp"
             android:layout_height="115dp"
-            android:background="@color/gris"
+            android:backgroundTint="@color/gris"
             android:text="@string/pop"
             android:gravity="top"
             android:textColor="@color/white"
@@ -93,7 +92,7 @@
             android:id="@+id/genero4"
             android:layout_width="163dp"
             android:layout_height="115dp"
-            android:background="@color/morado"
+            android:backgroundTint="@color/morado"
             android:text="@string/alternativa"
             android:gravity="top"
             android:textColor="@color/white"
